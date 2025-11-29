@@ -34,11 +34,11 @@ class Program
             }
             else if (userChoice == "3")
             {
-                ListingActivity a2 = new ListingActivity(
+                ListingActivity a3 = new ListingActivity(
                                 "Listing",
                                 "This activity will help you reflect on good things in your life by having you list as many things as you can in a certain area."
                                 );
-                a2.Run();
+                a3.Run();
                 Console.Clear();
             }
             else if (userChoice == "4")
