@@ -1,6 +1,6 @@
 using System;
 using System.Runtime.CompilerServices;
-public abstract class Activity
+public class Activity
 {
     protected string _name;
     protected string _date;
@@ -20,12 +20,21 @@ public abstract class Activity
     {
         return _minutes;
     }
-    public abstract double GetDistance();
-    public abstract double GetSpeed();
-    public abstract double GetPace();
+    public virtual double GetDistance()
+    {
+        return 0;
+    }
+    public virtual double GetSpeed()
+    {
+        return 0;
+    }
+    public virtual double GetPace()
+    {
+        return 0;
+    }
     public string GetSummary()
     {
-        return $"{_date}{_name} ({_minutes}): " +
+        return $"{_date} {_name} ({_minutes} minutes): " +
          $"Distance: {GetDistance():0.00} km, " +
          $"Speed: {GetSpeed()} kph, " +
          $"Pace: {GetPace()} min per km ";
