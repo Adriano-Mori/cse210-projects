@@ -23,23 +23,24 @@ public class GoalManager
             string userChoice = Console.ReadLine();
             if (userChoice == "1")
             {
-
+                CreateGoal();
             }
             else if (userChoice == "2")
             {
-
+                ListGoalDetails();
             }
             else if (userChoice == "3")
             {
-
+                SaveGoals();
             }
             else if (userChoice == "4")
             {
-
+                LoadGoals();
             }
             else if (userChoice == "5")
             {
-
+                RecordEvent();
+                DisplayPlayerInfo();
             }
             else if (userChoice == "6")
             {
