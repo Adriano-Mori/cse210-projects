@@ -28,8 +28,6 @@ public abstract class Goal
     public abstract string GetStringRepresentation();
     public virtual string GetDetailsString()
     {
-        string checkbox = "[ ]";
-
-        return $"{checkbox} {_shortName} ({_description})";
+        return $" {_shortName} ({_description})";
     }
 }
